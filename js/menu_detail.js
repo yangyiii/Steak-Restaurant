@@ -25,7 +25,7 @@ window.onload=function(){
 	var add=document.getElementById("address").value;
 	var food=document.getElementById("food").value;
 	var num=document.getElementById("num").value;
-	alert("您订单信息是：\n"+city+"市\n"+"地址是"+add+"\n订单是"+food+"\n"+"数量"+num)
+	alert("您订单信息是：\n"+city+"市\n"+"地址:"+add+"\n订单:"+food+"\n"+"数量:"+num)
 }
 
 }
