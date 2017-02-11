@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="西餐厅网站，高档牛排，餐厅">
+	<meta name="description" content="西餐厅是一家提供高档牛排的餐厅">
+	<title>Steak House西餐厅</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/menu_detail.js"></script>
+	<script src="jquery/jquery-3.1.0.js"></script>
+	<script src="jquery/menu_detail.js"></script>
+</head>
+<body>
+	<div class="home">
+		<div class="head clearfix">
+			    <h1>STEAK HOUSE</h1>
+			    <div class="head_left">
+			    <ul>
+			    	<li><img src="images/phone.png" alt=""></li>
+			    	<li><span>+4578 655 3887</span></li>
+			    </ul>
+			    </div>
+			    <div class="head_right">
+			     <ul>
+			     	<li><input type="button" value="Login"></li>
+			     	<li><a href="#">￥65(一份)<br/><span>购物车</span></a></li>
+			     	<li><img src="images/shopping-car.png" alt=""></li>
+			     </ul>
+		</div>
+		</div>
+		<div class="about_nav">
+				<ul>
+					<li><a href="index.html"><span>首页</span></a></li>
+					<li><a href="about.html"><span>关于我们</span></a></li>
+					<li>
+					    <a href="menu.html" class="on"><span>菜单列表</span></a>
+					</li>
+					<li> 
+					    <a href="news.html"><span>新闻中心</span></a>
+					</li>
+					<li>
+					    <a href="contact.html"><span>联系我们</span></a>
+					</li>
+				</ul>	
+		</div>
+		<div class="about_order">
+				<form action="post">
+					<span>城市</span>
+					<select name="" id="city">
+						<option value="深圳">深圳</option>
+						<option value="广州">广州</option>
+						<option value="上海">上海</option>
+					</select>
+					<span>地址</span>
+					<select name="" id="address">
+						<option value="方兴科技园">方兴科技园</option>
+						<option value="龙城广场">龙城广场</option>
+						<option value="万科广场">万科广场</option>
+					</select>
+					<span>订单</span>
+					<select name="" id="food">
+						<option value="菲力牛排">菲力牛排</option>
+						<option value="铁板牛排">铁板牛排</option>
+						<option value="西冷牛排">西冷牛排</option>
+					</select>
+					<span>数量</span>
+					<select name="" id="num">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+					<input type="button" value="下单" id="buy_food">
+				</form>
+		</div>
+		<div class="detail_head">
+		    <ul>
+		    	<li><img src="images/logo.png" alt="">
+			        <span>牛排</span>
+                </li>
+		    	<li>
+		    	    <a href="index.html">首页>></a>
+		    	    <a href="menu.html">菜单列表>></a>
+		    	    <a href="#">牛排</a>
+		    	</li>
+		    </ul>
+		</div>
+		<div class="detail_content clearfix">
+		    <h2>法式经典肋眼牛排</h2>
+		    <div class="detail_content_left ">
+		    	<img src="images/detail_1_big.png" alt="" id="thickImg">
+                <div class="buy clearfix">
+                 	<p>价格：&nbsp;￥<span class="price1">99</span></p>
+		            <img src="images/menu_car.png" alt="" class="buy_car">
+                </div>
+		    	<span>数量：</span>
+				<select name="" id="num_sort">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+				</select>
+				<div class="cow clearfix">
+					<p>法式经典肋眼牛排</p>
+				    <img src="images/cow.png" alt="">
+				</div>
+				<p>约6.3盎司<br/><br/>
+                   精选进口肋眼牛排，肉质香嫩，融入香蒜黄油经典法式风味，令人回味。</p>
+                <img src="images/100.png" alt="">
+		    </div>
+		    <div class="detail_content_right">
+		        <div class="small_picture">
+		        	<ul>
+		        		<li><img src="images/detail_1.png" alt=""></li>
+		        		<li><img src="images/detail_2.png" alt=""></li>
+		        		<li><img src="images/detail_3.png" alt=""></li>
+		        	</ul>
+		        </div>
+		    	<div class="tip_info">
+		    		<h3>小贴士</h3>
+		    		<div class="notelist">
+		    			<ul>
+		    				<li>1.取自牛的第6根到第12根肋骨附近的肉</li>
+		    				<li>2.特色是多汁、肉嫩</li>
+		    				<li>3.许多脂肪夹杂，红白相间</li>
+		    				<li>4.通常上桌的肋眼牛排是已经去骨的。</li>
+		    				<li>5.肋眼牛排油嫩的肉丝中夹着少许牛筋</li>
+		    				<li>6.适合煎烤</li>
+		    			</ul>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		<div class="detail_food_info">
+			<form action="" method="post" id="fr">
+				<input type="button" value="牛排图集" class="yel">
+			    <input type="button" value="牛排介绍">
+			    <input type="button" value="牛排烹饪">
+			</form>
+			<div id="info_pic">
+			    <div class="info_pic_steak clearfix">
+			    	<ul>
+					<li>
+						<img src="images/menu_detail_1.png" alt="">
+						<img src="images/menu_detail_2.png" alt="">
+						<img src="images/menu_detail_3.png" alt="">
+					</li>
+				</ul>
+			    </div>
+				<div class="info_pic_intro clearfix">
+					<img src="images/menu_detail_2.png" alt="">
+					<p>欧洲中世纪时，猪肉及羊肉是平民百姓的食用肉，牛肉则是王公贵族们的高级肉品，尊贵的牛肉被他们搭配上了当时也是享有尊贵身份的胡椒及香辛料一起烹调，并在特殊场合中供应，以彰显主人的尊贵身份</p>
+				</div>
+				<div class="info_pic_cook">
+					<p>牛排，或称牛扒，是块状的牛肉，是西餐中最常见的食物之一。牛排的烹调方法以煎和烧烤为主。调汁是牛排的重中之重。把家乐黑椒汁稍许加热后，均匀地浇淋在牛排上，浓郁多汁的牛排就搞定啦!</p>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<p>Copyrights @2016 All Rights Reserved By Steak House </p>
+		</div>
+	</div>
+</body>
+</html>

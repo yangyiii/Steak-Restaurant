@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="西餐厅网站，高档牛排，餐厅">
+	<meta name="description" content="西餐厅是一家提供高档牛排的餐厅">
+	<title>Steak House西餐厅</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="jquery/jquery-3.1.0.js"></script>
+	<script src="jquery/menu.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="home">
+		<div class="head clearfix">
+			<h1>STEAK HOUSE</h1>
+			<div class="head_left">
+			    <ul>
+			    	<li><img src="images/phone.png" alt=""></li>
+			    	<li><span>+4578 655 3887</span></li>
+			    </ul>
+			</div>
+			<div class="head_right">
+			     <ul>
+			     	<li><input type="button" value="Login"></li>
+			     	<li><a href="#">￥65(一份)<br/><span>购物车</span></a></li>
+			     	<li><img src="images/shopping-car.png" alt=""></li>
+			     </ul>
+			</div>
+		</div>
+		<div class="about_nav">
+				<ul>
+					<li><a href="index.html"><span>首页</span></a></li>
+					<li><a href="about.html"><span>关于我们</span></a></li>
+					<li>
+					    <a href="menu.html" class="on"><span>菜单列表</span></a>
+					</li>
+					<li> 
+					    <a href="news.html"><span>新闻中心</span></a>
+					</li>
+					<li>
+					    <a href="contact.html"><span>联系我们</span></a>
+					</li>
+				</ul>	
+		</div>
+		<div class="about_order">
+				<form action="post">
+					<span>城市</span>
+					<select name="" id="city">
+						<option value="深圳">深圳</option>
+						<option value="广州">广州</option>
+						<option value="上海">上海</option>
+					</select>
+					<span>地址</span>
+					<select name="" id="address">
+						<option value="方兴科技园">方兴科技园</option>
+						<option value="龙城广场">龙城广场</option>
+						<option value="万科广场">万科广场</option>
+					</select>
+					<span>订单</span>
+					<select name="" id="food">
+						<option value="菲力牛排">菲力牛排</option>
+						<option value="铁板牛排">铁板牛排</option>
+						<option value="西冷牛排">西冷牛排</option>
+					</select>
+					<span>数量</span>
+					<select name="" id="num">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+					<input type="button" value="下单" id="buy_food">
+				</form>
+		</div>
+		<div class="menu_info clearfix">
+			<h2>Featured menu</h2>
+			<ul>
+				<li><img src="images/menu_info_1.png" alt=""></li>
+				<li>
+				    <hr>
+				    <h3>牛排套餐</h3>
+				    <p>牛排营养丰富，有补中益气、滋养脾胃、强健筋骨、
+                       化痰息风、止渴止涎的功效。牛肉 味甘，性平，归脾
+                       、胃经，有补中益气、滋养脾胃、强健筋骨、化痰息
+                       风、止渴止涎的功效。牛肉中的肌氨酸含量比任何其它食品都高，这使它对增长肌肉、增强力量特别有效。在进行训练的头几秒钟里，肌氨酸是肌肉燃料之源，它可以有效补充三磷酸腺苷，从而使训练能坚持得更久。</p>
+                       <a href="menu_detail.html">了解更多</a>
+				</li>
+				<li>
+					<hr>
+					<h3>法式煎牛排</h3>
+					<p>煎牛排是一道美食，咬一口，肉质柔软松化，
+                       很有层次感，先是酱汁的甜味，然后是牛肉
+                       的鲜香，各种香味的汁液和肉香在口腔中融
+                       为一体。如果想要得到最细腻的口感，那就要选用菲力，这是牛脊身上最嫩的肉，几乎不含肥膘，煎三分熟、五分熟、七分熟都可以，在口感上，能够令唇齿充分享受鲜嫩的感觉。</p>
+                       <a href="menu_detail.html">了解更多</a>
+				</li>
+				<li><img src="images/menu_info_1_2.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="menu_choice clearfix">
+			<div class="menu_nav">
+				<ul>
+					<li><a href="#" class="wht">牛排</a></li>
+					<li><a href="#">饮品</a></li>
+					<li><a href="#">甜点</a></li>
+					<li><a href="#">沙拉</a></li>
+				</ul>
+			</div>
+			<div class="menu_food">
+				<img src="images/arrow_left.png" alt="" class="arrow" id="prev">
+				<div class="menu_food_show">
+					<ul>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_1.png" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_2.png" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_3.png" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_4.png" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_5.jpg" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_6.jpg" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_7.jpg" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_8.jpg" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_9.jpg" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_10.jpg" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_11.jpg" alt="">
+					</li>
+					<li>
+					    <div class="line_top"></div>
+					    <div class="line_bottom"></div>
+						<div class="line_left"></div>
+						<div class="line_right"></div>
+					    <img src="images/menu_show_12.jpg" alt="">
+					</li>
+				    </ul>
+				</div>
+				<img src="images/arrow_right.png" alt="" class="arrow" id="next">
+			</div>
+		</div>
+		<div class="menu_foot clearfix">
+			<ul>
+				<li>
+				    <a href="#"></a>
+				    <h3>Fruits</h3>
+				    <p>市面直采最新鲜的水果，有机水果，无任何农药添加，可以放心食用，水果沙拉采用独秘的沙拉酱。</p>
+				</li>
+				<li>
+				    <a href="#"></a>
+				    <h3>Sea Foods</h3>
+				    <p>购买本地渔民刚打捞最新鲜的海鲜，保持海鲜食物的韧性，更加鲜美，先用大火烹饪，再采用小火熬制慢慢入味</p>
+				</li>
+				<li>
+				    <a href="#"></a>
+				    <h3>Vegetables</h3>
+				    <p>有机蔬菜，食用更健康，远离城市污染，牛排的最佳配菜，营养均衡，膳食搭配</p>
+				</li>
+				<li>
+				    <a href="#"></a>
+				    <h3>Meet</h3>
+				    <p>食材均来自西班牙进口牛板腱，肉质富有极大的弹性，更有嚼劲，肉质鲜美，不会破坏牛肉原生的味道。每一份牛排均来自厨师的精心烹饪。</p>
+				</li>
+			</ul>
+		</div>
+		<div class="foot">
+			<p>Copyrights @2016 All Rights Reserved By Steak House </p>
+		</div>
+	</div>
+</body>
+</html>

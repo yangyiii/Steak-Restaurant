@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="西餐厅网站，高档牛排，餐厅">
+	<meta name="description" content="西餐厅是一家提供高档牛排的餐厅">
+	<title>Steak House西餐厅</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/news_info.js"></script>
+	<script src="jquery/jquery-3.1.0.js"></script>
+	<script src="jquery/news_info.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="home">
+		<div class="head clearfix">
+			<h1>STEAK HOUSE</h1>
+			<div class="head_left">
+			    <ul>
+			    	<li><img src="images/phone.png" alt=""></li>
+			    	<li><span>+4578 655 3887</span></li>
+			    </ul>
+			</div>
+			<div class="head_right">
+			     <ul>
+			     	<li><input type="button" value="Login"></li>
+			     	<li><a href="#">￥65(一份)<br/><span>购物车</span></a></li>
+			     	<li><img src="images/shopping-car.png" alt=""></li>
+			     </ul>
+			</div>
+		</div>
+		<div class="about_nav">
+				<ul>
+					<li><a href="index.html"><span>首页</span></a></li>
+					<li><a href="about.html"><span>关于我们</span></a></li>
+					<li>
+					    <a href="menu.html"><span>菜单列表</span></a>
+					</li>
+					<li> 
+					    <a href="news.html" class="on"><span>新闻中心</span></a>
+					</li>
+					<li>
+					    <a href="contact.html"><span>联系我们</span></a>
+					</li>
+				</ul>	
+		</div>
+		<div class="about_order">
+				<form action="post">
+					<span>城市</span>
+					<select name="" id="city">
+						<option value="深圳">深圳</option>
+						<option value="广州">广州</option>
+						<option value="上海">上海</option>
+					</select>
+					<span>地址</span>
+					<select name="" id="address">
+						<option value="方兴科技园">方兴科技园</option>
+						<option value="龙城广场">龙城广场</option>
+						<option value="万科广场">万科广场</option>
+					</select>
+					<span>订单</span>
+					<select name="" id="food">
+						<option value="菲力牛排">菲力牛排</option>
+						<option value="铁板牛排">铁板牛排</option>
+						<option value="西冷牛排">西冷牛排</option>
+					</select>
+					<span>数量</span>
+					<select name="" id="num">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+					<input type="button" value="下单" id="buy_food">
+				</form>
+		</div>
+		<div class="news_info_head">
+		    <ul>
+		    	<li><img src="images/logo.png" alt="">
+			        <span>新闻动态</span>
+                </li>
+		    	<li>
+		    	    <a href="index.html">首页>></a>
+		    	    <a href="news.html">新闻中心>></a>
+		    	    <a href="#">新闻动态</a>
+		    	</li>
+		    </ul>
+		</div>
+		<div class="news_info_content clearfix">
+		    <div id="time"></div>
+			<h2>Cupcake炫酷的精巧设计，带红门店生意！</h2>
+			<div class="info_content_left">
+				<img src="images/news_info.png" alt="">
+				<h3>文化背景</h3>
+				<p>和精致仿佛的法式甜点相比，Cupcake充满着美国式的气氛，简单，自由，充满快乐。Cupcake是美国人生活的一部分，也是最容易操作的甜点。主妇从烤箱里端出新鲜热辣的蛋糕，小孩子等不及放凉，就一边烫着手一边偷吃了。长大后，Cupcake变成送给朋友的礼物，给自己的安慰，称呼爱人的昵称，甚至金融危机来袭，还可以笑着自嘲说：至少我还买得起Cupcake。</p>
+			</div>
+			<div class="info_content_right">
+				<p>Cupcake译为杯型蛋糕。在英国通常称为fairy cake，仙女蛋糕，在美国也叫做patty cake or cup cake。</p>
+				<p>Cupcake和精致的法式甜点相比，充满着美国式的简单、自由气氛，充满快乐。Cupcake是美国人生活的一部分，也是最容易操作的甜点。主妇从烤箱里端出新鲜热辣的蛋糕，小孩子等不及放凉，就一边烫着手一边偷吃了。Cupcake也是人们最喜欢送给朋友的礼物，Cupcake是平民的，也是侈时尚的，很多人说Cupcake在美国之外的国家流行起来，就是因为《欲望都市》的影响。</p>
+				<p>超模Heidi Klum送给维多利亚的生日礼物，就是一天一个，一年365个的Cupcake。可见这款蛋糕有着多么丰富的变化，又有着多么大的魅力。</p>
+				<img src="images/eye.png" alt="" id="eye">
+				<span id="eye_txt">320</span>
+				<img src="images/star.png" alt="">
+				<span>251</span>
+			</div>
+		</div>
+		<div class="news_info_bottom">
+		    <hr>
+			<h2>评论区</h2>
+			<p>comments</p>
+			<hr>
+			<ul>
+				<li> 
+				    <img src="images/person_1.png" alt="">
+				    <h3>月色寂寥</h3>
+				    <p>这款蛋糕看着就好想吃，果然是最奢侈的蛋糕艺术品，简直看着就流口水好嘛</p>
+				    <img src="images/eye.png" alt="" class="eye_1">
+				    <span>12</span>
+				    <a href="#">回复</a>
+				</li>
+				<li>
+					<img src="images/person_2.png" alt="">
+				    <h3>牵绊云似海</h3>
+				    <p>那个信奉优雅并坚持自己的人，法国百合蔻蛋糕总会格外珍视。就是因为这份珍视而创造出连芭蕾舞演员都可以放心品尝的甜点系列：完美的口感，用不可思议的低热量来呈现。</p>
+				    <img src="images/eye.png" alt="" class="eye_1">
+				    <span>30</span>
+				    <a href="">回复</a>
+				</li>
+				<li>
+					<img src="images/person_3.png" alt="">
+				    <h3>奈何</h3>
+				    <p>宠爱自己吧，为什么不呢?唯有美丽和美食，不可辜负。</p>
+				    <img src="images/eye.png" alt="" class="eye_1">
+				    <span>18</span>
+				    <a href="">回复</a>
+				</li>
+				<li>
+					<img src="images/person_4.png" alt="">
+				    <h3>嘟嘟你好萌</h3>
+				    <p>吃过Berko甜品的人，都会懂得那份精致背后的味觉放纵，超过 50种味道的CupCake，43种味道的、Cheesecake，当然，还有时不时限量版的铂金蛋糕和红丝绒蛋糕前来精彩客串……</p>
+				    <img src="images/eye.png" alt="" class="eye_1">
+				    <span>36</span>
+				    <a href="">回复</a>
+				</li>
+			</ul>
+			<input type="button" value="更多...">
+		</div>
+		<div class="foot">
+			<p>Copyrights @2016 All Rights Reserved By Steak House </p>
+		</div>
+	</div>
+</body>
+</html>

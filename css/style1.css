@@ -1,0 +1,172 @@
+/* head */
+.head h1{
+	font-size:2rem;
+}
+.head_left ul li span{
+	font-size:1rem;
+}
+.head_right input{
+	width:60px;
+	height:30px;
+}
+.head_right a{
+	font-size:0.8rem;
+}
+.banner .pic #dot{
+	left:42%;
+}
+.banner .pic #dot li{
+	width:15px;
+	height:15px;
+}
+.banner .nav ul li{
+	height:3.75rem;
+}
+.banner .nav ul li a{
+	font:1rem/3.75rem "方正北魏楷书简体";
+}
+.banner .nav ul li a:hover{
+	font-size:1.1rem;
+}
+.banner .nav ul li a.on{
+	font-size:1.1rem;
+}
+.banner .nav>ul>li>ul>li>a{
+	font:1rem/2.5rem "方正北魏楷书简体";
+}
+.banner .order{
+	height:3.2rem;
+}
+.banner .order form span{
+	font:1rem/3.2rem "方正北魏楷书简体";
+}
+.banner .order form select{
+	width:15%;
+    height:1.4rem;
+    margin-right:2%;
+    font:0.8rem/1.4rem "方正北魏楷书简体";
+}
+#num{
+	height:1.4rem;
+    font:0.8rem/1.4rem "方正北魏楷书简体";
+    width:5%;
+}
+.banner .order form input{
+	height:1.4rem;
+	width:7%;
+}
+
+/* info */
+.info ul li h2{
+	font:1.2rem/5rem "方正北魏楷书简体";
+}
+.info ul li p{
+	font:0.8rem/1.8rem "方正北魏楷书简体";
+	width:80%;
+	top:12%;
+}
+/* cake */
+.cake ul li{
+	margin:-100px 10% 0 0;
+	width:25%;
+}
+.cake ul li span{
+	font:1rem/2.5rem "方正北魏楷书简体";
+}
+.cake ul li a .spinner{
+	border:5px solid #ecab18;
+	border-right-color:#1ad280;
+	border-bottom-color:#1ad280;
+}
+/* hot_offer */
+.hot_offer{
+	margin-top:2.5rem;
+}
+.hot_offer .title{
+	margin-left:30%;
+}
+.hot_offer .title h2{
+	font:1.8rem/3rem "Gadugi";
+}
+.hot_offer .title img{
+	transform:scale(0.7);
+}
+.hot_offer ul li .summary .summary_text h3{
+	color:#fff;
+	font:0.8rem/2rem "方正北魏楷书简体";
+}
+.hot_offer ul li .summary .summary_text p{
+	color:#fff;
+	font:0.6rem/1rem "方正北魏楷书简体";
+	
+}
+/* menu */
+.our_menu{
+	margin:2.5rem auto 0;
+}
+.our_menu .title{
+	margin-left:30%;
+}
+.our_menu .title h2{
+	font:1.8rem/3rem "Gadugi";
+}
+.our_menu .title img{
+	transform:scale(0.7);
+}
+.our_menu .our_menu_left{
+	margin:2rem auto 0;
+}
+.our_menu .our_menu_left ul{
+	width:100%;
+}
+.our_menu .our_menu_left ul li .title h3{
+	font:1.2rem "方正北魏楷书简体";
+}
+.our_menu .our_menu_left ul li p{
+	font-size:0.8rem;
+}
+.our_menu .our_menu_left ul li:first-child{
+	margin-right:35%;
+}
+.our_menu .our_menu_left ul li:last-child p:nth-child(2){
+    margin-top:0.6rem;
+}
+.our_menu_right{
+	margin-top:2.5rem;
+    margin-left:25%;
+	width:50%;
+	/* border:1px solid #000; */
+}
+.our_menu_right .mask{
+	border:80px solid rgba(0,0,0,0.7);
+}
+/* feature */
+.feature{
+	margin:2.5rem auto 0;
+}
+.feature .title{
+	margin-left:16%;
+}
+.feature .title img{
+	transform:scale(0.7);
+}
+.feature .title h2{
+	font:1.8rem/3rem "Gadugi";
+}
+.feature .food_sort>ul>li>a{
+	width:100%;
+	height:2.8rem;
+	font:1.2rem/2.8rem "方正北魏楷书简体";
+}
+.feature .food_sort>ul>li>ul>li>.trans>h3{
+	font:0.8rem "方正北魏楷书简体";
+	top:10%;
+}
+.feature .food_sort>ul>li>ul>li>.trans>p{
+	font:0.6rem "方正北魏楷书简体";
+	top:25%;
+}
+/*foot*/
+.foot p{
+	font:0.8rem/6rem "方正北魏楷书简体";
+}

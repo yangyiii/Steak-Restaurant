@@ -1,0 +1,2027 @@
+/* css reset */
+body,ul,dt,dl,dd,li,p,h1,h2,h3,h4,h5,h6,hr,figure,header,nav,section,article,figcaption,input,form,
+section,article,header,nav,aside,footer,figure,details
+{
+	margin:0;
+	padding:0;
+}
+img{
+	border:none;
+	display:block;
+}
+ul,dl{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+textarea{resize:none;}
+/* clearfix */
+.clearfix::after{
+	content:"";
+	display:block;
+	width:0;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	zoom:1;
+}
+/* body */
+.home{
+	width:100%;
+	background:#f7efd5;
+}
+/* head */
+.head{
+	width:76%;
+	margin:0 auto;
+	overflow:hidden;
+	/* border:1px solid #000; */
+}
+.head h1{
+	font:3rem "MV Boli";
+	color:#08538c;
+	text-align:center;
+	margin-top:1rem;
+}
+.head_left{
+	/* border:1px solid #000; */
+}
+.head_left ul{
+	float:left;
+}
+.head_left ul li{
+	float:left;
+	margin-right:5px;
+}
+.head_left img{
+}
+.head_left ul li:nth-child(2){
+    margin-top:0.6rem;
+}
+.head_left ul li span{
+	color:#555;
+	font: 1.2rem "黑体";
+}
+.head_right{
+}
+.head_right ul{
+	float:right;
+}
+.head_right ul li{
+	float:left;
+	margin-top:0.5rem;
+	/* border:1px solid #000; */ 
+}
+.head_right input{
+	background:#08538c;
+	width:70px;
+	height:35px;
+	color:#fff;
+    margin-right:10px;
+    transition:background 1s ease .1s;
+    display:block;
+}
+.head_right input:hover{
+	background:#fd9f3e;
+}
+.head_right ul li:nth-child(2){
+    /* border:1px solid #000; */
+   margin-right:10px;
+}
+.head_right ul li:nth-child(3){
+
+}
+.head_right a{
+	font:1rem "楷体";
+	color:#000;
+
+}
+.head_right ul li img{
+	
+}
+.head_right a span{
+	color:#CDCDCD;
+	font-size:0.8rem;
+}
+.head_right a span:hover{
+	text-decoration:underline;
+}
+
+/* banner */
+.banner{
+	width:100%;
+	margin-top:2rem;
+	position:relative;
+	overflow:hidden;
+	height:100%;
+}
+
+/* pic */
+.banner .pic{
+	/* position:relative; */
+}
+.banner .pic #show{
+	width:100%;
+}
+.banner .pic #show li img{
+	width:100%;
+	height:100%;
+    display:block;
+}
+.banner .pic #dot{
+	position:absolute;
+	top:80%;
+	left:45%;
+}
+.banner .pic #dot li{
+	width:20px;
+	height:20px;
+	float:left;
+	border-radius:50%;
+	background:#fff;
+	margin-right:40px;
+    cursor:pointer;
+}
+.banner .pic #dot li.round{
+	background:#08538c;
+}
+/* nav */
+.banner .nav{
+	width:76%;
+	position:absolute;
+	left:12%;
+	top:0;
+}
+.banner .nav>ul{
+	width:100%;
+}
+.banner .nav>ul>li{
+	float:left;
+    width:20%;
+    height:90px;
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+    /* border:1px solid #000; */
+}
+
+.banner .nav>ul>li>a.on{
+	background:rgba(255,255,255,0.4);
+	color:#121212;
+	font-size:1.4rem;
+	transition:all 1.5s ease .1s;
+}
+.banner .nav>ul>li>a{
+	width:100%;
+    height:100%;
+    display:block;
+    position:relative;
+    font:1.25rem/5.625rem "方正北魏楷书简体";
+    color:#fff;
+}
+.banner .nav>ul>li>a>span{
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:1;
+}
+/* .banner .nav>ul>li>a:hover{
+	color:#121212;
+} */
+.banner .nav>ul>li>a::before{
+	content:"";
+	width:100%;
+	height:100%;
+	display:block;
+	position:absolute;
+	background:rgba(255,255,255,0.4);
+	transform:scaleY(0);
+	transition:all 0.4s;
+	transform-origin:50% 100% 0;
+}
+.banner .nav>ul>li>a:hover::before{
+	transform:scaleY(1);
+	transition-timing-function:cubic-bezier(0.52,1.67,0.37,0.66);
+}
+.banner .nav>ul>li>ul{
+	position:absolute;
+	width:100%;
+	display:none;
+	/* border:1px solid #fff;
+	box-sizing:border-box; */
+}
+.banner .nav>ul>li>ul>li{}
+.banner .nav>ul>li>ul>li>a{
+	font:1.25rem/3rem "方正北魏楷书简体";
+	color:#fff;
+	display:block;
+	text-align:center;
+	width:100%;
+}
+.banner .nav>ul>li>ul>li>a:hover{
+	color:#ff0;
+}
+/* order */
+.banner .order{
+	width:100%;
+	position:absolute;
+	height:5.3rem;
+	background:#fd9f3e;
+	bottom:0px;
+}
+.banner .order form{
+	width:76%;
+	margin:0 auto;
+}
+.banner .order form span{
+	font:1.25rem/5.3rem "方正北魏楷书简体";
+	color:#333333;
+}
+.banner .order form select{
+    width:18%;
+    height:1.875rem;
+    margin-right:3%;
+    color:#8f8d8d;
+	font:1.25rem/1.875rem "方正北魏楷书简体";
+}
+.banner .order form select:nth-child(8){
+	width:5%;
+	height:1.875rem;
+	font:1.25rem/1.875rem "方正北魏楷书简体";
+}
+.banner .order form select option{
+}
+.banner .order form input{
+	height:1.56rem;
+	width:5%;
+	background:#08538c;
+	color:#fff;
+	cursor:pointer;
+}
+
+/* info */
+.info{
+	width:100%;
+	height:100%;
+	background:url("../images/s1.png") no-repeat;
+	background-size:contain;
+	min-height:454px;
+	position:relative;
+	overflow:hidden;
+}
+.info ul{
+	height:100%;
+	position:absolute;
+}
+.info ul li{
+	width:25%;
+	height:100%;
+	float:left;
+	position:relative;
+}
+.info ul li h2{
+	color:#fff;
+	font:1.5rem/6.25rem "方正北魏楷书简体";
+	left:5%;
+	position:absolute;
+}
+.info ul li p{
+	color:#fff;
+	font:1rem/2.5rem "方正北魏楷书简体";
+	left:5%;
+	position:absolute;
+	top:20%;
+	width:60%;
+}
+.info ul li p:hover{
+	color:#ebf546;
+}
+/* cake */
+.cake{
+	width:100%;
+}
+.cake ul{
+	width:76%;
+	margin:0 auto;
+}
+.cake ul li{
+	float:left;
+	margin:0px 10% 0 0;
+	width:25%;
+    height:100%;
+}
+.cake ul li:last-child{
+	margin-right:0;
+}
+.cake ul li a .spinner{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+	position:absolute;
+	top:0;
+	left:0;
+	border:10px solid #ecab18;
+	border-right-color:#1ad280;
+	border-bottom-color:#1ad280;
+	border-radius:50%;
+	transition:all .8s ease;
+}
+.cake ul li a:hover .spinner{
+	transform:rotate(180deg)
+}
+.cake ul li a{
+	display:block;
+	border-radius:50%;
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.cake ul li a::before{
+	content:"";
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.5);
+	position:absolute;
+	border-radius:50%;
+	display:block;
+	transform:scaleY(0);
+	transform-origin:center;
+	transition:all .3s ease;
+}
+.cake ul li a:hover::before{
+	transform:scaleY(1);
+}
+.cake ul li a img{
+	border-radius:50%;
+	width:100%;
+	height:100%;
+}
+.cake ul li span{
+	display:block;
+	color:#534f4f;
+	font:1.125rem/2.5rem "方正北魏楷书简体";
+    text-align:center;
+}
+.cake ul li span:hover{
+	color:red;
+}
+
+
+/* hot_offer */
+.hot_offer{
+	width:100%;
+	margin-top:3.75rem;
+}
+.hot_offer .title{
+	margin-left:36%;
+}
+.hot_offer .title h2{
+	color:#08538c;
+	font:2.25rem/3rem "Gadugi";
+	float:left;
+	margin:0.3rem 0 0 3%;
+}
+.hot_offer .title img{
+	float:left;
+}
+
+
+.hot_offer ul{
+	width:100%;
+	margin-top:2.5rem;
+}
+.hot_offer ul li{
+	float:left;
+	width:25%;
+	cursor:pointer;
+	position:relative;
+	overflow:hidden;
+}
+.hot_offer ul li img{
+	width:100%;
+}
+.hot_offer ul li .summary{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:rgba(0,0,0,0.6);
+	top:110%;
+}
+.hot_offer ul li .summary .summary_text{
+	padding:5%;
+	margin-top:30%;
+}
+.hot_offer ul li .summary .summary_text h3{
+	color:#fff;
+	font:1.25rem/3rem "方正北魏楷书简体";
+	text-align:center;
+}
+.hot_offer ul li .summary .summary_text p{
+	color:#fff;
+	font:1.125rem/2.25rem "方正北魏楷书简体";
+	
+}
+/* our_menu */
+.our_menu{
+	width:76%;
+	margin:3.75rem auto 0;
+}
+.our_menu .title{
+	margin-left:37%;
+}
+.our_menu .title img{
+	float:left;
+}
+.our_menu .title h2{
+	color:#08538c;
+	font:2.25rem/3rem "Gadugi";
+	float:left;
+	margin:0.3rem 0 0 3%;
+}
+/* .our_menu_left */
+.our_menu .our_menu_left{
+	margin:3rem auto 0;
+}
+.our_menu .our_menu_left ul{}
+.our_menu .our_menu_left ul li:first-child{
+	float:left;
+	margin-right:10%;
+
+}
+.our_menu .our_menu_left ul li:last-child{
+	float:left;
+}
+.our_menu .our_menu_left ul li .title{
+    margin-left:0;
+}
+.our_menu .our_menu_left ul li .title img{
+	float:left;
+}
+.our_menu .our_menu_left ul li .title h3{
+	float:left;
+	margin:0.3rem 0 0 3%;
+	font:1.5rem "方正北魏楷书简体";
+	color:#000;
+}
+.our_menu .our_menu_left ul li p{
+	color:#5d5955;
+	line-height:3rem;
+	font-size:1.1rem;
+	/* font-family:"方正北魏楷书简体"; */
+	/* font:1.2rem/3rem "方正北魏楷书简体"; */
+}
+.our_menu .our_menu_left ul li p:hover{
+	color:red;
+}
+.our_menu .our_menu_left ul li:first-child p:nth-child(2){
+    margin-top:1.5rem;
+}
+.our_menu .our_menu_left ul li:last-child p:nth-child(2){
+    margin-top:0.8rem;
+}
+/* our_menu_right */
+.our_menu_right{
+	margin-top:3rem;
+	float:left;
+	margin-left:10%;
+	width:30%;
+	position:relative;
+	height:100%;
+	/* border:1px solid #000; */
+}
+.our_menu_right img{
+   width:100%;
+   height:100%;
+   cursor:pointer;
+}
+.our_menu_right .mask{
+	left:0;
+	top:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+    opacity:1;
+   visibility:visible;
+   border:100px solid rgba(0,0,0,0.7);
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   -moz-transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+   -webkit-transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+   -o-transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+   -ms-transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+   transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+}
+.our_menu_right:hover .mask{
+	border:0px double rgba(0,0,0,0.6);
+	opacity:0;
+	visibility:hidden;
+}
+/* feature */
+.feature{
+	width:76%;
+	margin:3.75rem auto 0;
+	/* border:1px double #000; */
+}
+.feature .title{
+	margin-left:26%;
+}
+.feature .title img{
+	float:left;
+}
+.feature .title h2{
+	color:#08538c;
+	font:2.25rem/3rem "Gadugi";
+	float:left;
+	margin:0.3rem 0 0 3%;
+}
+.feature .food_sort{
+	width:100%;
+	margin-top:2.2rem;
+}
+.feature .food_sort>ul{}
+.feature .food_sort>ul>li{
+    margin-top:1rem;
+}
+.feature .food_sort>ul>li>.shd{
+	-webkit-box-shadow:2px 2px 3px #333;
+	color:#08538c;
+	box-shadow:2px 2px 3px #333;
+}
+.feature .food_sort>ul>li>a{
+	width:100%;
+	height:3.4rem;
+	display:block;
+	color:#fd9f3e;
+	font:1.5rem/3.4rem "方正北魏楷书简体";
+	background:#fff;
+	padding-left:2%;
+}
+.feature .food_sort>ul>li>ul{
+	padding:2%;
+	width:100%;
+}
+.feature .food_sort>ul>li>ul>li{
+	width:20%;
+	float:left;
+	margin-right:6%;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+.feature .food_sort>ul>li>ul>li>.trans{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:rgba(0,0,0,0);
+	left:0;
+	top:0;
+	
+}
+.feature .food_sort>ul>li>ul>li>.trans>h3{
+	font:1.4rem "方正北魏楷书简体";
+	white-space:nowrap;
+	text-overflow:ellipsis;
+    position:absolute;
+    left:-200px;
+    width:100%;
+    text-align:center;
+    color:#21c4fa;
+    top:20%;
+}
+.feature .food_sort>ul>li>ul>li>.trans>p{
+	font:0.9rem/1.5rem "方正北魏楷书简体";
+	text-indent:1.6rem;
+	position:absolute;
+	left:-200px;
+	top:40%;
+	width:100%;
+	box-sizing:border-box;
+	padding:4%;
+	color:#fff;
+}
+.feature .food_sort>ul>li>ul>li:hover .trans{
+	background:rgba(0,5,5,0.5);
+	transition:all 0.8s ease;
+}
+.feature .food_sort>ul>li>ul>li:hover .trans h3{
+	transform:translateX(200px);
+	transition:all 0.8s ease;
+}
+.feature .food_sort>ul>li>ul>li:hover .trans p{
+	transform:translateX(200px);
+	transition:all 0.8s ease;
+}
+.feature .food_sort>ul>li>ul>li:last-child{
+	margin-right:0;
+}
+.feature .food_sort>ul>li>ul>li>img{
+	width:100%;
+	transition:all 1s ease;
+}
+.feature .food_sort>ul>li>ul>li:hover img{
+	cursor:pointer;
+	transform:scale(1.2);
+	box-shadow:2px 2px 3px #fd9f3e;
+}
+
+/* foot */
+.foot{
+	width:100%;
+}
+.foot p{
+	text-align:center;
+	font:1rem/8rem "方正北魏楷书简体";
+	color:#403f3f;
+}
+
+
+/* about页面 */
+.about_nav{
+	background:url(../images/nav.png) no-repeat;
+	margin-top:40px;
+	height:95px;
+}
+.about_nav ul{
+	width:1100px;
+	margin:0 auto;
+}
+.about_nav ul li{
+	float:left;
+    width:220px;
+    height:95px;
+    text-align:center; 
+    cursor:pointer;
+    position:relative;
+    /* border:1px solid #000; */
+}
+.about_nav>ul>li>a.on{
+	background:rgba(255,255,255,0.5);
+	color:#121212;
+	font-size:22px;
+	transition:all 1.5s ease .1s;
+}
+.about_nav>ul>li>a{
+	font:20px/95px "方正北魏楷书简体";
+	color:#fff;
+	width:220px;
+	height:95px;
+    display:block;
+    position:relative;
+}
+.about_nav>ul>li>a>span{
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:1;
+}
+.about_nav>ul>li>a::before{
+	content:"";
+	display:block;
+	width:220px;
+	height:95px;
+	position:absolute;
+	background:rgba(255,255,255,0.4);
+	transform:scaleY(0);
+	transition:all 0.4s;
+	transform-origin:center;
+}
+.about_nav>ul>li>a:hover::before{
+	transform:scaleY(1);
+}
+/* about_order */
+.about_order{
+    height:85px;
+	background:#fd9f3e;
+}
+.about_order form{
+	width:1100px;
+	margin:0 auto;
+}
+.about_order form span{
+	font:20px/85px "方正北魏楷书简体";
+	color:#333333;
+}
+.about_order form select{
+    width:200px;
+    height:30px;
+    margin-right:33px;
+    color:#8f8d8d;
+	font:20px/30px "方正北魏楷书简体";
+}
+.about_order form select option{
+}
+#num{
+	width:55px;
+}
+.about_order form input{
+	margin-left:20px;
+	height:25px;
+	width:55px;
+	background:#08538c;
+	color:#fff;
+}
+
+/* .about_main */
+.about_main{
+	width:1100px;
+	margin:0 auto;
+}
+.about_main h2{
+	text-align:center;
+	font:36px/140px "Monotype Corsiva";
+	color:#08538c;
+}
+.about_main .about_main_left{
+	float:left;
+	width:550px;
+	position:relative;
+	/* border:1px solid #000; */
+}
+.about_main .about_main_left .mask{
+	left:0;
+	top:0;
+	position:absolute;
+	width:550px;
+	height:367px;
+	cursor:pointer;
+    opacity:1;
+   visibility:visible;
+   border:150px solid rgba(0,0,0,0.7);
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   -moz-transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+   -webkit-transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+   -o-transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+   -ms-transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+   transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+}
+.about_main .about_main_left .mask:hover{
+    border:0px double rgba(0,0,0,0.6);
+	opacity:0;
+	visibility:hidden;
+}
+.about_main .about_main_left img{
+	cursor:pointer;
+}
+
+.about_main .about_main_left h3{
+	font:20px/70px "方正北魏楷书简体";
+	color:484746;
+	text-align:center;
+}
+.about_main .about_main_left p{
+	font:16px/30px "方正北魏楷书简体";
+	color:#6c6a68;
+}
+.about_main .about_main_left p:hover{
+	color:#fd9f3e;
+	text-shadow:1px 1px 2px #ccc;
+}
+.about_main .about_main_right{
+	float:left;
+	width:550px;
+	padding-left:20px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.about_main .about_main_right h3{
+	font:30px "方正北魏楷书简体";
+	color:#08538c;
+	margin:10px 0 0 105px;
+}
+.about_main .about_main_right p{
+	font:20px "方正北魏楷书简体";
+	color:#fd9f3e;
+	margin-top:40px;
+}
+.about_main .about_main_right span{
+	font:16px/30px "方正北魏楷书简体";
+	color:#6c6a68;
+	margin:-25px 0 0 60px;
+	display:block;
+}
+.about_main .about_main_right span:hover{
+	color:#8a5a3d;
+	text-shadow:0px 1px 2px #666;
+}
+
+/* about_cook */
+.about_cook{
+	width:1100px;
+	margin:0 auto;
+}
+.about_cook h2{
+	text-align:center;
+	font:36px/160px "Monotype Corsiva";
+	color:#08538c;
+}
+.about_cook ul{}
+.about_cook ul li{
+	width:240px;
+	float:left;
+	margin-right:42px;
+}
+.about_cook ul li:last-child{
+	margin-right:0;
+}
+.about_cook ul li a{
+	display:block;
+	position:relative;
+}
+.about_cook ul li a::before{
+		content:"";
+		display:block;
+		width:240px;
+		height:240px;
+		background:rgba(0,0,0,0.4) no-repeat scroll 0 0;
+		position:absolute;
+	    transform:scale(0);
+	    transition:all 0.4s;
+	    /* transform-origin:center; */
+	    color:#fff;
+	    text-align:center;
+	    font:20px/240px "方正北魏楷书简体";
+	}
+.about_cook ul li:nth-child(1) a::before{
+		content:"Bradley Grosh";
+}
+.about_cook ul li:nth-child(2) a::before{
+		content:"David Austin";
+}
+.about_cook ul li:nth-child(3) a::before{
+		content:"Patrick Pool";
+}
+.about_cook ul li:nth-child(4) a::before{
+		content:"Dayle Peters";
+}
+.about_cook ul li a:hover::before{transform:scale(1);
+z-index:2;}
+.about_cook ul li a img{
+	width:240px;
+	box-shadow:2px 2px 3px #666;
+	position:absolute;
+}
+
+.about_cook ul li h3{
+	font:24px/80px "方正北魏楷书简体";
+	color:#fd9f3e;
+	margin-top:250px;
+}
+.about_cook ul li p{
+	font:16px/30px "方正北魏楷书简体";
+	color:#6a6a6a;
+
+}
+
+
+/* menu页面 */
+.menu_info{
+	width:1100px;
+	margin:0 auto;
+}
+.menu_info h2{
+	text-align:center;
+	font:36px/140px "Monotype Corsiva";
+	color:#08538c;
+}
+.menu_info ul{}
+.menu_info ul li{
+	float:left;
+}
+.menu_info ul li:nth-child(1){
+	width:498px;
+	height:372px;
+	overflow:hidden;
+}
+.menu_info ul li:nth-child(2){
+	width:602px;
+	height:372px;
+	padding-left:50px;
+	box-sizing:border-box;
+}
+.menu_info ul li:nth-child(3){
+	padding-right:50px;
+	box-sizing:border-box;
+	width:498px;
+}
+.menu_info ul li:nth-child(4){
+	width:602px;
+	height:371px;
+	overflow:hidden;
+}
+.menu_info ul li img{
+}
+.menu_info ul li img:hover{
+	
+	transform:scale(1.2);
+	transition:all 1s ease;
+}
+.menu_info ul li hr{
+	width:200px;
+	height:2px;
+	background:#4c4a4a;
+	margin-top:20px;
+}
+.menu_info ul li:nth-child(3) hr{
+	margin-left:238px;
+}
+.menu_info ul li h3{
+	color:#2f2e2e;
+	font:24px/70px "方正北魏楷书简体";
+	text-align:center;
+}
+.menu_info ul li p{
+	color:#4e4e4e;
+	font:18px/30px "方正北魏楷书简体";
+}
+.menu_info ul li a{
+	display:block;
+	width:100px;
+	height:35px;
+	border-radius:10px;
+	border:1px solid #f77359;
+	text-align:center;
+	font:16px/35px "方正北魏楷书简体";
+	color:#777676;
+	
+}
+.menu_info ul li:nth-child(2) a{
+    margin: 40px 0 0 230px;
+}
+.menu_info ul li:nth-child(3) a{
+	margin:40px 0 0 170px;
+}
+.menu_info ul li a:hover{
+	color:#fff;
+	background:#f77359;
+	transition:all 1s ease;
+}
+
+/* menu_choice */
+.menu_choice{
+	margin-top:70px;
+}
+.menu_choice .menu_nav{
+	height:90px;
+	background:#cb5539;
+}
+.menu_choice .menu_nav ul{
+	width:1100px;
+	margin:0 auto;
+
+}
+.menu_choice .menu_nav ul li{
+	width:275px;
+	float:left;
+}
+.menu_choice .menu_nav ul li a{
+	display:block;
+	width:275px;
+	height:90px;
+	color:#fff;
+	font:24px/90px "方正北魏楷书简体";
+	text-align:center;
+}
+.menu_choice .menu_nav ul li a.wht{
+	color:#cb5539;
+	background:#fff;
+}
+.menu_choice .menu_food{
+	width:1100px;
+	margin:70px auto 0;
+	position:relative;
+}
+.menu_choice .menu_food img.arrow{
+	position:absolute;
+	cursor:pointer;
+}
+.menu_choice .menu_food img.arrow:nth-child(1){
+	top:45px;
+}
+.menu_choice .menu_food img.arrow:last-child{
+	top:45px;
+	right:0;
+}
+.menu_choice .menu_food .menu_food_show{
+	width:908px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+	/* border:1px solid #000; */
+	height:208px;
+}
+.menu_choice .menu_food ul{
+	width:3632px;
+	position:absolute;
+}
+.menu_choice .menu_food ul li{
+	float:left;
+	margin-right:37px;
+	position:relative;
+}
+.menu_choice .menu_food ul li:nth-child(3){
+	margin-right:0;
+}
+.menu_choice .menu_food ul li:nth-child(6){
+	margin-right:0;
+}
+.menu_choice .menu_food ul li:nth-child(9){
+	margin-right:0;
+}
+.menu_choice .menu_food ul li:nth-child(12){
+	margin-right:0;
+}
+.menu_choice .menu_food ul li .line_top{
+	position:absolute;
+	height:3px;
+	width:0px;
+	background:rgba(255,255,255,0.6);
+	z-index:1;
+    top:50px;
+    left:50px;
+}
+.menu_choice .menu_food ul li .line_bottom{
+	position:absolute;
+	height:3px;
+	/* width:178px; */
+	width:0px;
+	background:rgba(255,255,255,0.6);
+	z-index:1;
+    top:158px;
+    left:50px;
+}
+.menu_choice .menu_food ul li .line_left{
+	position:absolute;
+	/* height:160px; */
+	height:0px;
+	width:3px;
+	background:rgba(255,255,255,0.6);
+	z-index:1;
+    top:25px;
+    left:70px;
+}
+.menu_choice .menu_food ul li .line_right{
+	position:absolute;
+	/* height:160px; */
+	height:0px;
+	width:3px;
+	background:rgba(255,255,255,0.6);
+	z-index:1;
+    top:25px;
+    left:200px;
+}
+.menu_choice .menu_food ul li img{
+	box-shadow:4px 4px 5px #666,-1px -1px 1px #666;
+}
+.menu_choice .menu_food ul li::before{
+	position:absolute;
+	background:rgba(0,0,0,0.5);
+	content:"";
+	width:100%;
+	height:100%;
+	transform:scale(0);
+	transition:all 1s;
+	transform-origin:center;
+	z-index:1;
+	left:0;
+	top:0;
+}
+.menu_choice .menu_food ul li:hover::before{
+    transform:scale(1);
+}
+/* menu_foot */
+.menu_foot{
+	background:url("../images/menu_foot.png");
+	margin-top:140px;
+	height:580px;
+	overflow:hidden;
+}
+.menu_foot ul{
+	width:1100px;
+	margin:140px auto 0;
+
+}
+.menu_foot ul li{
+	width:165px;
+	float:left;
+	margin-right:140px;
+	/* border:1px solid #fff; */
+}
+.menu_foot ul li:last-child{
+	margin-right:0;
+}
+.menu_foot ul li a{
+	width:104px;
+	height:104px;
+	display:block;
+	margin-left:25px;
+	border:2px solid rgba(255,255,255,0.3);
+	border-radius:50%;
+}
+.menu_foot ul li a:hover{
+	opacity:0.5;
+}
+.menu_foot ul li:nth-child(1) a{
+	background:url("../images/menu_foot_1.png") 20px 20px no-repeat;
+	
+}
+.menu_foot ul li:nth-child(2) a{
+	background:url("../images/menu_foot_2.png") 20px 20px  no-repeat;
+}
+.menu_foot ul li:nth-child(3) a{
+	background:url("../images/menu_foot_3.png") 20px 20px no-repeat;
+}
+.menu_foot ul li:nth-child(4) a{
+	background:url("../images/menu_foot_4.png") 20px 20px no-repeat;
+}
+.menu_foot ul li h3{
+	color:#fff;
+	font:24px/60px "方正北魏楷书简体";
+	text-align:center;
+}
+.menu_foot ul li p{
+	color:#fff;
+	font:14px/30px "方正北魏楷书简体";
+}
+.menu_foot ul li p:hover{
+	color:#fbc818;
+}
+/* menu_detail页面 */
+.detail_head{
+	width:1100px;
+	height:65px;
+	margin:40px auto 0;
+	border-top:1px dashed #7d7c7c;
+	border-bottom:1px dashed #7d7c7c;
+}
+.detail_head ul{}
+.detail_head ul li{
+	float:left;
+}
+.detail_head ul li img{
+	float:left;
+	margin:5px 5px 0 0;
+}
+.detail_head ul li span{
+	float:left;
+	color:#3c3b3b;
+	font:20px/65px "方正北魏楷书简体";
+}
+.detail_head ul li:nth-child(2){
+	margin-left:750px;
+}
+.detail_head ul li a{
+	font:20px/65px "方正北魏楷书简体";
+	color:#3c3b3b;
+}
+.detail_head ul li a:hover{
+	color:red;
+}
+/* detail_content */
+.detail_content{
+	width:1100px;
+	margin:0 auto;
+}
+.detail_content h2{
+	color:#2e2e2e;
+	font:24px/100px "方正北魏楷书简体";
+	text-align:center;
+}
+.detail_content .detail_content_left{
+	float:left;
+}
+.detail_content .detail_content_left img{}
+.detail_content .detail_content_left .buy{
+	overflow:hidden;
+}
+.detail_content .detail_content_left .buy p{
+	color:#2e2e2e;
+	font:24px/60px "方正北魏楷书简体";
+	float:left;
+}
+.detail_content .detail_content_left .buy>img{
+	float:right;
+	margin-top:30px;
+	cursor:pointer;
+}
+.detail_content .detail_content_left .buy p>span{
+	color:red;
+}
+.detail_content .detail_content_left span{
+	font:24px "方正北魏楷书简体";
+	color:#2e2e2e;
+}
+.detail_content .detail_content_left select{
+	width:75px;
+	height:30px;
+	background:#c6c1c1;
+	font-size:20px;
+}
+.detail_content .detail_content_left .cow{
+	margin-top:55px;
+}
+.detail_content .detail_content_left .cow p{
+	font:24px "方正北魏楷书简体";
+	color:#2e2e2e;
+	float:left;
+}
+.detail_content .detail_content_left .cow img{
+    float:left;
+    margin:-50px 0 0 30px;
+}
+.detail_content .detail_content_left p{
+	color:#2e2e2e;
+	font:14px "方正北魏楷书简体";
+	margin-top:20px;
+}
+.detail_content .detail_content_left>img:last-child{
+	margin-top:20px;
+}
+.detail_content_right{
+	float:left;
+	margin-left:100px;
+}
+.detail_content_right .small_picture{}
+.detail_content_right .small_picture ul{}
+.detail_content_right .small_picture ul li:first-child{
+	margin-top:0;
+}
+.detail_content_right .small_picture ul li{
+    margin-top:10px;
+}
+.detail_content_right .small_picture ul li img{
+	cursor:pointer;
+}
+.detail_content_right .tip_info{
+	width:300px;
+	height:250px;
+	background:#fcbe7e;
+	box-shadow:2px 2px 3px #666;
+	margin-top:80px;
+	overflow:hidden;
+}
+.detail_content_right .tip_info h3{
+	font:20px/60px "方正北魏楷书简体";
+	color:#fff;
+	text-align:center;
+}
+.detail_content_right .tip_info .notelist {
+	width:286px;
+	height:120px;
+	overflow:hidden;
+	margin:20px auto 0;
+}
+
+.detail_content_right .tip_info .notelist ul{
+	/* overflow:hidden; */
+	width:286px;
+}
+.detail_content_right .tip_info .notelist ul li{
+	color:#fff;
+	font:16px/30px "方正北魏楷书简体";
+	height:30px;
+	overflow:hidden;
+	white-space:nowrap;
+	/* border:1px solid #000; */
+}
+/* detail_food_info */
+.detail_food_info{
+	width:1100px;
+	margin:50px auto 0;
+}
+.detail_food_info form{}
+.detail_food_info form input{
+	width:90px;
+	height:32px;
+	background:#d5d2cf;
+	cursor:pointer;
+	margin-right:25px;
+	font:16px "方正北魏楷书简体";
+}
+.detail_food_info form input.yel{
+	background:#fd9f3e;
+	color:#fff;
+}
+.detail_food_info #info_pic{
+	border:1px solid #000;
+	width:740px;
+	height:200px;
+}
+.detail_food_info #info_pic .info_pic_steak ul{
+	margin:35px 0 0 20px;
+}
+.detail_food_info #info_pic .info_pic_steak ul li{
+}
+.detail_food_info #info_pic .info_pic_steak ul li img{
+	float:left;
+	margin-right:50px;
+}
+.detail_food_info #info_pic ul li img:last-child{
+	margin-right:0;
+}
+.detail_food_info .info_pic_intro{
+	margin:35px 0 0 20px;
+	display:none;
+}
+.detail_food_info .info_pic_intro img{
+	float:left;
+	margin-right:50px;
+}
+.detail_food_info .info_pic_intro p{
+	font:16px/30px "方正北魏楷书简体";
+    float:left;
+    width:400px;
+}
+.detail_food_info .info_pic_cook{
+	margin:35px 0 0 20px;
+	display:none;
+	padding:10px;
+}
+.detail_food_info .info_pic_cook p{
+	font:16px/30px "方正北魏楷书简体";
+}
+/* new页面 */
+.new_content{
+	width:1100px;
+	margin:0 auto;
+}
+.new_content h2{
+	text-align:center;
+	font:36px/140px "Monotype Corsiva";
+	color:#08538c;
+}
+.new_content ul{}
+.new_content ul li{
+	width:345px;
+	height:580px;
+	box-sizing:border-box;
+	float:left;
+	margin-right:32px;
+	background:rgba(255,255,255,0.7);
+}
+.new_content ul li:nth-child(3){
+	margin-right:0;
+}
+.new_content ul li:nth-child(4){
+	margin-top:55px;
+}
+.new_content ul li:nth-child(5){
+	margin-top:55px;
+}
+.new_content ul li:nth-child(6){
+	margin-right:0;
+	margin-top:55px;
+}
+
+.new_content ul li a.tooltip>img{
+	margin:25px;
+	box-shadow:5px 5px 5px #666;
+}
+.new_content ul li a.tooltip>img:hover{
+	border-radius:50%;
+	/* transform:scale(1.5); */
+	transition:all 1s ease;
+}
+.new_content ul li h3{
+	font:20px/40px "方正北魏楷书简体";
+	color:#fd9f3e;
+    text-align:center;
+}
+.new_content ul li:nth-child(1)>img{
+	margin:-40px 0 40px 245px;
+}
+.new_content ul li:nth-child(4)>img{
+	margin:-40px 0 40px 285px;
+}
+.new_content ul li:nth-child(2) p{
+    margin-top:18px;
+}
+.new_content ul li:nth-child(3) p{
+	 margin-top:18px;
+}
+.new_content ul li:nth-child(5) p{
+	 margin-top:18px;
+}
+.new_content ul li:nth-child(6) p{
+	 margin-top:18px;
+}
+.new_content>ul>li>p{
+	color:#7a7b7c;
+    font-size:16px;
+    line-height:30px;
+    padding:7px;
+    font-family:"方正北魏楷书简体";
+}
+.new_content>ul>li>p:hover{
+	color:#cc3311;
+}
+.new_content ul li span{
+	color:#7a7b7c;
+    font-size:16px;
+    line-height:30px;
+    display:block;
+    margin-left:210px;
+}
+.new_content ul li a:last-child{
+	display:block;
+	text-align:center;
+	color:#fd9f3e;
+	border:1px solid #fd9f3e;
+	width:115px;
+	height:35px;
+	font:14px/35px "方正北魏楷书简体";
+	margin:20px 0 0 105px;
+}
+.new_content ul li a:last-child:hover{
+	background:#fd9f3e;
+	color:#fff;
+	transition:all 1s ease;
+	border-radius:10px;
+}
+/* new_foot */
+.new_foot{
+	margin:40px auto 0;
+	width:1100px;
+}
+.new_foot a:nth-child(1){
+	float:left;
+	font:16px/35px "方正北魏楷书简体";
+	width:80px;
+	height:35px;
+	background:#fd9f3e;
+	color:#fff;
+	text-align:center;
+	margin-left:360px;
+}
+.new_foot p{
+	float:left;
+	font:16px/35px "方正北魏楷书简体";
+	color:#7a7b7c;
+	margin:0 50px;
+}
+.new_foot p span{
+	color:red;
+}
+.new_foot a:nth-child(3){
+	float:left;
+	font:16px/35px "方正北魏楷书简体";
+	width:80px;
+	height:35px;
+	border:1px solid #fd9f3e;
+	color:#7a7b7c;
+	text-align:center;
+}
+/* news_info页面 */
+.news_info_head{
+	width:1100px;
+	height:65px;
+	margin:40px auto 0;
+	border-top:1px dashed #7d7c7c;
+	border-bottom:1px dashed #7d7c7c;
+}
+.news_info_head ul{}
+.news_info_head ul li{
+	float:left;
+}
+.news_info_head ul li img{
+	float:left;
+	margin:5px 5px 0 0;
+}
+.news_info_head ul li span{
+	float:left;
+	color:#3c3b3b;
+	font:20px/65px "方正北魏楷书简体";
+}
+.news_info_head ul li:nth-child(2){
+	margin-left:680px;
+}
+.news_info_head ul li a{
+	font:20px/65px "方正北魏楷书简体";
+	color:#3c3b3b;
+}
+.news_info_head ul li a:hover{
+	color:red;
+}
+/* news_info_content */
+.news_info_content{
+	width:1100px;
+	margin:0 auto;
+	border-bottom:1px solid #000;
+}
+.news_info_content #time{
+	text-align:center;
+	font:16px "方正北魏楷书简体";
+	margin-top:30px;
+	animation:timing 5s ease infinite;
+}
+@keyframes timing{
+	0%{color:#f9a017;}
+	30%{color:#1aafd0;}
+	50%{color:#ad494d;}
+	80%{color:#5d386a;}
+	100%{color:#78f425;}
+}
+.news_info_content h2{
+	font:24px/120px "方正北魏楷书简体";
+	color:#08538c;
+	text-align:center;
+}
+.news_info_content .info_content_left{
+	width:560px;
+	float:left;
+}
+.news_info_content .info_content_left img{}
+.news_info_content .info_content_left h3{
+	font:20px/80px "方正北魏楷书简体";
+	color:#474645;
+}
+.news_info_content .info_content_left p{
+	font:16px/30px "方正北魏楷书简体";
+	color:#412213;
+}
+.news_info_content .info_content_right{
+	float:left;
+	width:500px;
+	margin-left:40px;
+	border-top:1px solid #000;
+}
+.news_info_content .info_content_right p{
+	font:16px/30px "方正北魏楷书简体";
+	color:#412213;
+	margin-top:45px;
+	padding:10px;
+}
+.news_info_content .info_content_right img{
+	float:left;
+	margin:120px 0 0 10px;
+	cursor:pointer;
+}
+.news_info_content .info_content_right img:nth-child(6){
+	margin-left:40px;
+}
+.news_info_content .info_content_right span{
+	float:left;
+	margin:120px 0 40px 10px;
+}
+/* .news_info_bottom */
+.news_info_bottom{
+	margin:0 auto;
+	width:1100px;
+	position:relative;
+}
+.news_info_bottom hr{
+	position:absolute;
+	width:55px;
+	height:1px;
+	background:#a60400;
+}
+.news_info_bottom hr:nth-child(1){
+    top:7px;
+}
+.news_info_bottom hr:nth-child(4){
+    top:7px;
+    left:122px;
+}
+.news_info_bottom h2{
+	font:20px "方正北魏楷书简体";
+	color:#383838;
+	margin:30px 0 0 60px;
+}
+.news_info_bottom>p{
+	font:16px "方正北魏楷书简体";
+	color:#383838;
+	margin-left:55px;
+}
+.news_info_bottom ul{}
+.news_info_bottom ul li{
+	border-bottom:1px solid #edcecb;
+	position:relative;
+	overflow:hidden;
+	/* border:1px solid #000; */
+}
+.news_info_bottom ul li img:nth-child(1){
+    position:absolute;
+    top:50px;
+    left:50px;
+}
+.news_info_bottom ul li img:nth-child(1):hover{
+	 transform:rotateX(360deg);
+	 transition:all 0.8s;
+}
+.news_info_bottom ul li h3{
+	color:#3c3838;
+	font:18px/40px "方正北魏楷书简体";
+	margin:50px 0 0 140px;
+}
+.news_info_bottom ul li p{
+	font:16px/30px "方正北魏楷书简体";
+	color:#383838;
+	margin:0 0 20px 140px;
+}
+.news_info_bottom ul li img:nth-child(4){
+    position:absolute;
+    bottom:10px;
+    right:250px;
+}
+.news_info_bottom ul li span{
+	font:16px/30px "方正北魏楷书简体";
+	color:#383838;
+	float:left;
+	margin:-3px 0 0 860px;
+}
+.news_info_bottom ul li a{
+	display:block;
+	width:50px;
+	height:25px;
+	background:#a60400;
+	text-align:center;
+	color:#fff;
+	font:14px/25px "方正北魏楷书简体";
+	border-radius:15px;
+	float:left;
+	margin:0 0 10px 50px;
+}
+.news_info_bottom input{
+	width:85px;
+	height:45px;
+	font:20px/45px "方正北魏楷书简体";
+	color:#a60400;
+	text-align:center;
+	border-radius:10px;
+	margin:25px 0 0 40px;
+}
+
+/* contact页面 */
+/* contact_head */
+.contact_head{
+	width:1100px;
+	margin:70px auto 0;
+	position:relative;
+}
+.contact_head>img{
+	position:absolute;
+
+}
+.contact_head>img:nth-child(1){
+	left:200px;
+	top:15px;
+}
+.contact_head>img:nth-child(2){
+	left:650px;
+	top:15px;
+}
+.contact_head h2{
+	text-align:center;
+	color:#353535;
+	font:30px "方正北魏楷书简体";
+}
+.contact_head p{
+	color:#353535;
+	font:20px "Kalinga";
+	text-align:center;
+}
+.contact_head hr{
+	width:45px;
+	height:1px;
+	background:#353535;
+	margin-left:525px;
+}
+/* contact_main */
+.contact_main{
+	width:1100px;
+	margin:70px auto 0;
+}
+/* contact_left */
+.contact_left{
+	float:left;
+}
+.contact_main .contact_left img{}
+.contact_main .contact_left form{
+	margin-top:25px;
+}
+.contact_main .contact_left form input{
+	width:125px;
+	height:35px;
+	font:16px "方正北魏楷书简体";
+	color:#9ac1e6;
+	border:1px solid #9ac1e6;
+	background:rgba(255,255,255,0);
+	margin-right:190px;
+	cursor:pointer;
+}
+.contact_main .contact_left form input.blu{
+	background:#9ac1e6;
+	color:#fff;
+}
+.contact_main .contact_left form input:last-child{
+	margin-right:0;
+}
+.contact_main .contact_left .contact_address{
+	margin-top:25px;
+}
+.contact_main .contact_left .contact_address img{
+	float:left;
+}
+.contact_main .contact_left .contact_address p{
+	float:left;
+	color:#3d3d3d;
+	font:16px "方正北魏楷书简体";
+	margin:20px 0 0 25px;
+}
+.contact_main .contact_left .contact_email{
+	margin-top:25px;
+}
+.contact_main .contact_left .contact_email img{
+	float:left;
+}
+.contact_main .contact_left .contact_email p{
+	float:left;
+	color:#3d3d3d;
+	font:16px "方正北魏楷书简体";
+	margin:12px 0 0 25px;
+}
+.contact_main .contact_left a{
+	display:block;
+	width:140px;
+	height:40px;
+	text-align:center;
+	font:20px/40px "方正北魏楷书简体";
+	color:#fd9f3e;
+	border:1px solid #fd9f3e;
+	margin-top:60px;
+	position:relative;
+}
+.contact_main .contact_left>a::before{
+	content:"留言建议";
+	width:100%;
+	height:100%;
+	display:block;
+	position:absolute;
+	background:rgba(253,159,62,1);
+	transform:scaleY(0);
+	transition:all 0.4s;
+	transform-origin:50% 100% 0;
+	color:#fff;
+	z-index:0;
+	font:20px/40px "方正北魏楷书简体";
+}
+.contact_main .contact_left>a:hover::before{
+	transform:scaleY(1);
+	transition-timing-function:cubic-bezier(0.52,1.67,0.37,0.66);
+}
+/* contact_right */
+.contact_right{
+	float:left;
+	width:290px;
+	margin:40px 0 0 20px;
+}
+.contact_right .contact_phone{}
+.contact_right .contact_phone img{
+	float:left;
+}
+.contact_right .contact_phone p{
+	float:left;
+	font:24px "方正北魏楷书简体";
+	color:#20201f;
+	margin:5px 0 0 15px;
+}
+.contact_right .contact_road{
+	margin-top:70px;
+}
+.contact_right .contact_road img{
+	float:left;
+	
+}
+.contact_right .contact_road p{
+	float:left;
+	font:16px/30px "方正北魏楷书简体";
+	color:#20201f;
+	margin:5px 0 0 15px;
+	width:210px;
+}
+
+/* input页面 */
+.contact_input_head{
+	width:1100px;
+	height:65px;
+	margin:40px auto 0;
+	border-top:1px dashed #7d7c7c;
+	border-bottom:1px dashed #7d7c7c;
+	display:block;
+}
+.contact_input_head ul{}
+.contact_input_head ul li{
+	float:left;
+}
+.contact_input_head ul li img{
+	float:left;
+	margin:5px 5px 0 0;
+}
+.contact_input_head ul li span{
+	float:left;
+	color:#3c3b3b;
+	font:20px/65px "方正北魏楷书简体";
+}
+.contact_input_head ul li:nth-child(2){
+	margin-left:680px;
+}
+.contact_input_head ul li a{
+	font:20px/65px "方正北魏楷书简体";
+	color:#3c3b3b;
+}
+.contact_input_head ul li a:hover{
+	color:red;
+}
+/* contact_input_main */
+.contact_input_main{
+	width:1100px;
+	margin:85px auto 0;
+	display:block;
+}
+/* contact_input_left */
+.contact_input_left{
+	width:435px;
+	float:left;
+	display:block;
+	/* border:1px solid #000; */
+}
+.contact_input_left .input_write{
+	display:block;
+}
+.contact_input_left .input_write img{
+	float:left;
+	cursor:pointer;
+}
+.contact_input_left .input_write img:hover{
+	transform:rotate(360deg);
+	transition:all 0.4s ease;
+}
+.contact_input_left .input_write p{
+	float:left;
+	font:16px/36px "方正北魏楷书简体";
+	color:#696867;
+	width:365px;
+	margin-left:25px;
+}
+.contact_input_left .input_phone{
+	margin-top:50px;
+	display:block;
+}
+.contact_input_left .input_phone img{
+	float:left;
+	cursor:pointer;
+}
+.contact_input_left .input_phone img:hover{
+	transform:rotate(360deg);
+	transition:all 0.4s ease;
+}
+.contact_input_left .input_phone p{
+	float:left;
+	font:16px/36px "方正北魏楷书简体";
+	color:#696867;
+	width:365px;
+	margin-left:25px;
+}
+.contact_input_left .input_gift{
+	margin-top:50px;
+	display:block;
+}
+.contact_input_left .input_gift img{
+	float:left;
+	cursor:pointer;
+}
+.contact_input_left .input_gift img:hover{
+	transform:rotateY(360deg);
+	transition:all 0.6s ease;
+}
+.contact_input_left .input_gift p{
+	float:left;
+	font:16px/36px "方正北魏楷书简体";
+	color:#696867;
+	width:365px;
+	margin-left:25px;
+}
+/* contact_input_right */
+.contact_input_right{
+	float:left;
+	width:575px;
+	margin-left:20px;
+	display:block;
+}
+.contact_input_right form{}
+.contact_input_right form .int{
+	display:block;
+}
+.contact_input_right form .int:nth-child(2){
+	margin-top:55px;
+}
+.contact_input_right form .int:nth-child(3){
+	margin-top:55px;
+}
+.contact_input_right form .int:nth-child(4){
+	margin-top:55px;
+}
+.contact_input_right form .int:nth-child(5){
+	margin-top:55px;
+}
+.contact_input_right form .int label{
+	float:left;
+	font:20px "方正北魏楷书简体";
+	color:#fd9f3e;
+}
+.contact_input_right form .int:nth-child(1) label{
+	margin:5px 0 0 60px;
+}
+.contact_input_right form .int:nth-child(1) input{
+	margin-left:5px;
+}
+.contact_input_right form .int:nth-child(2) label{
+	margin:5px 0 0 60px;
+}
+.contact_input_right form .int:nth-child(2) input{
+	margin:0 0 0 5px;
+}
+.contact_input_right form .int:nth-child(3) label{
+	margin:5px 0 0 40px;
+}
+.contact_input_right form .int:nth-child(3) input{
+	margin:0 0 0 5px;
+}
+.contact_input_right form .int:nth-child(4) label{
+	margin:5px 0 0 60px;
+}
+.contact_input_right form .int:nth-child(4) input{
+	margin:0 0 0 5px;
+}
+.contact_input_right form .int:nth-child(5) label{
+	margin:5px 0 0 20px;
+}
+.contact_input_right form .int:nth-child(5) textarea{
+	margin:0 0 0 5px;
+	width:315px;
+	background:rgba(255,255,255,0);
+}
+.contact_input_right form .int input{
+    display:block;
+    float:left;
+    width:315px;
+    height:37px;
+    color:#7d7d7c;
+    font:16px "方正北魏楷书简体";
+    border:1px solid #51504f;
+    background:rgba(255,255,255,0);
+}
+.contact_input_right form .int:nth-child(3) input:nth-child(2){
+	display:inline-block;
+	width:70px;
+	height:30px;
+}
+.contact_input_right form .int:nth-child(3) input:nth-child(3){
+	display:inline-block;
+	width:70px;
+	height:30px;
+	margin-left:40px;
+	text-align:center;
+}
+.contact_input_right form .int:nth-child(3) input:nth-child(4){
+	display:inline-block;
+	width:50px;
+	height:30px;
+	background:#fd9f3e;
+	color:#fff;
+}
+.contact_input_right form .int:nth-child(3) input:nth-child(5){
+	display:inline-block;
+	width:50px;
+	height:30px;
+	background:#fd9f3e;
+	color:#fff;
+}
+.contact_input_right form .sub{
+	display:block;
+	margin-top:30px;
+}
+.contact_input_right form .sub input{
+	display:block;
+	width:70px;
+	height:40px;
+	border-radius:10px;
+	color:#42413f;
+    font:16px "方正北魏楷书简体";
+    background:rgba(255,255,255,0);
+    float:left;
+    margin-left:150px;
+    cursor:pointer;
+}
+.contact_input_right form .sub input:hover{
+	border-radius:0;
+	background:#fd9f3e;
+	color:#fff;
+	transition:all 1s ease;
+}

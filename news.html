@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="西餐厅网站，高档牛排，餐厅">
+	<meta name="description" content="西餐厅是一家提供高档牛排的餐厅">
+	<title>Steak House西餐厅</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/news.js"></script>
+	<!-- <script src="js/index.js"></script> -->
+	<style>
+	#tooltip{
+		position:absolute;
+		background:#ccc;
+		display:none;
+		color:#666;
+		font:20px "方正北魏楷书简体";
+	}
+	</style>
+</head>
+<body>
+	<div class="home">
+		<div class="head clearfix">
+			<h1>STEAK HOUSE</h1>
+			<div class="head_left">
+			    <ul>
+			    	<li><img src="images/phone.png" alt=""></li>
+			    	<li><span>+4578 655 3887</span></li>
+			    </ul>
+			</div>
+			<div class="head_right">
+			     <ul>
+			     	<li><input type="button" value="Login"></li>
+			     	<li><a href="#">￥65(一份)<br/><span>购物车</span></a></li>
+			     	<li><img src="images/shopping-car.png" alt=""></li>
+			     </ul>
+			</div>
+		</div>
+		<div class="about_nav">
+				<ul>
+					<li><a href="index.html"><span>首页</span></a></li>
+					<li><a href="about.html"><span>关于我们</span></a></li>
+					<li>
+					    <a href="menu.html"><span>菜单列表</span></a>
+					</li>
+					<li> 
+					    <a href="news.html" class="on"><span>新闻中心</span></a>
+					</li>
+					<li>
+					    <a href="contact.html"><span>联系我们</span></a>
+					</li>
+				</ul>	
+		</div>
+		<div class="about_order">
+				<form action="post">
+					<span>城市</span>
+					<select name="" id="city">
+						<option value="深圳">深圳</option>
+						<option value="广州">广州</option>
+						<option value="上海">上海</option>
+					</select>
+					<span>地址</span>
+					<select name="" id="address">
+						<option value="方兴科技园">方兴科技园</option>
+						<option value="龙城广场">龙城广场</option>
+						<option value="万科广场">万科广场</option>
+					</select>
+					<span>订单</span>
+					<select name="" id="food">
+						<option value="菲力牛排">菲力牛排</option>
+						<option value="铁板牛排">铁板牛排</option>
+						<option value="西冷牛排">西冷牛排</option>
+					</select>
+					<span>数量</span>
+					<select name="" id="num">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+					<input type="button" value="下单" id="buy_food">
+				</form>
+		</div>
+		<div class="new_content clearfix">
+			<h2>Upcoming Events</h2>
+			<ul>
+				<li class="Img">
+					<a href="images/new_1_big.png" class="tooltip" title="时尚+品质+味道"><img src="images/new_1.png" alt=""></a>
+					<h3>时尚+品质+味道</h3>
+					<img src="images/hot.gif" alt="">
+					<p>卖牛排也卖生活方式，现在，走进一家用心打造的烘焙坊，细节上温馨的设计，会让客人很舒服，有一种不消费买点东西走，都觉得对不起这氛围的感觉，时尚潮流。 </p>
+					<span>【2016-09-26】</span>
+					<a href="news_info.html">READ MORE</a>
+				</li>
+				<li class="Img">
+					<a href="images/new_2_big.png"  class="tooltip" title="入选北京电视台的菜品"><img src="images/new_2.png" alt=""></a>
+					<h3>入选北京电视台的菜品</h3>
+					<p>入选北京电视台少儿健康美食推荐节目美食是一种心情、一种视觉、一种感官。美食在我们身边已经不仅仅是一种好吃的东西那么简单，人们更多的是考虑好心情时味蕾的打开。</p>
+					<span>【2016-09-18】</span>
+					<a href="news_info.html">READ MORE</a>
+				</li>
+				<li class="Img">
+					<a href="images/new_3_big.png" class="tooltip" title="想让人带回家的味道"><img src="images/new_3.png" alt=""></a>
+					<h3>想让人带回家的味道</h3>
+					<p>还记得一句经典的台词吗？“面包会有的,牛奶会有的,一切都会有的……” 曾经的年代认为有面包吃是最幸福的事。当清晨阳光洒满街口小巷时，其实，幸福有时候很简单。</p>
+					<span>【2016-08-28】</span>
+					<a href="news_info.html">READ MORE</a>
+				</li>
+				<li class="Img">
+					<a href="images/new_4_big.png" class="tooltip" title="入选少儿健康美食推荐节目"><img src="images/new_4.png" alt=""></a>
+					<h3>入选少儿健康美食推荐节目</h3>
+					<img src="images/hot.gif" alt="">
+					<p>Steak House专注烘焙文化事业的推广，特别注重对健康营养美味的研发，所以深受消费者青睐，慕蓝卡现入选京电视台少儿健康美食推荐节目。</p>
+					<span>【2016-08-12】</span>
+					<a href="news_info.html">READ MORE</a>
+				</li>
+				<li class="Img">
+					<a href="images/new_5_big.png" class="tooltip" title="Steak House再开多家分店"><img src="images/new_5.png" alt=""></a>
+					<h3>Steak House再开多家分店</h3>
+					<p>多家新店的开业，为品牌强势布局市场。将实现慕蓝卡高标准独特打造的以人为本的美食新体验，新店将用环境、产、服务给消费者提供一种愉快、轻松、休闲的就餐氛围。</p>
+					<span>【2016-07-28】</span>
+					<a href="news_info.html">READ MORE</a>
+				</li>
+				<li class="Img">
+					<a href="images/new_6_big.png" class="tooltip" title="独特的风格不需要解释"><img src="images/new_6.png" alt=""></a>
+					<h3>独特的风格不需要解释</h3>
+					<p>致力于烘焙美学文化的传播，将北美的西点技术、艺术与经典美食相结合，以夺目的外形和至纯的口感来触动食客的五感体验，为人们开启最美的味蕾之旅。</p>
+					<span>【2016-07-10】</span>
+					<a href="news_info.html">READ MORE</a>
+				</li>
+			</ul>
+		</div>
+		<div class="new_foot clearfix">
+			<a href="#"><  上页</a>
+			<p><span>1</span> &nbsp;&nbsp;   2&nbsp;&nbsp;    3 &nbsp;&nbsp;    4     ... </p>
+			<a href="#">下页  ></a>
+		</div>
+		<div class="foot">
+			<p>Copyrights @2016 All Rights Reserved By Steak House </p>
+		</div>
+	</div>
+</body>
+</html>

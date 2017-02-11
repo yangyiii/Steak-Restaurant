@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="西餐厅网站，高档牛排，餐厅">
+	<meta name="description" content="西餐厅是一家提供高档牛排的餐厅">
+	<title>Steak House西餐厅</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="jquery/jquery-3.1.0.js"></script>
+	<script src="jquery/input.js"></script>
+	<script src="js/index.js"></script>
+	<style>
+	.high{
+		color:red;
+		position:absolute;
+		top:10px;
+		left:450px;
+	}
+	.int{
+		position:relative;
+	}
+	.in{
+		position:absolute;
+		top:10px;
+		left:460px;
+	}
+	.on1{
+		background:red;
+		color:#fff;
+		font:14px "方正北魏楷书简体";
+	}
+	.on2{
+		background:green;
+		color:#fff;
+		font:14px "方正北魏楷书简体";
+	}
+	</style>
+</head>
+<body>
+	<div class="home">
+		<div class="head clearfix">
+			<h1>STEAK HOUSE</h1>
+			<div class="head_left">
+			    <ul>
+			    	<li><img src="images/phone.png" alt=""></li>
+			    	<li><span>+4578 655 3887</span></li>
+			    </ul>
+			</div>
+			<div class="head_right">
+			     <ul>
+			     	<li><input type="button" value="Login"></li>
+			     	<li><a href="#">￥65(一份)<br/><span>购物车</span></a></li>
+			     	<li><img src="images/shopping-car.png" alt=""></li>
+			     </ul>
+			</div>
+		</div>
+		<div class="about_nav">
+				<ul>
+					<li><a href="index.html"><span>首页</span></a></li>
+					<li><a href="about.html"><span>关于我们</span></a></li>
+					<li><a href="menu.html"><span>菜单列表</span></a></li>
+					<li><a href="news.html"><span>新闻中心</span> </a></li>
+					<li><a href="contact.html" class="on"><span>联系我们</span></a></li>
+				</ul>	
+		</div>
+		<div class="about_order">
+				<form action="post">
+					<span>城市</span>
+					<select name="" id="city">
+						<option value="深圳">深圳</option>
+						<option value="广州">广州</option>
+						<option value="上海">上海</option>
+					</select>
+					<span>地址</span>
+					<select name="" id="address">
+						<option value="方兴科技园">方兴科技园</option>
+						<option value="龙城广场">龙城广场</option>
+						<option value="万科广场">万科广场</option>
+					</select>
+					<span>订单</span>
+					<select name="" id="food">
+						<option value="菲力牛排">菲力牛排</option>
+						<option value="铁板牛排">铁板牛排</option>
+						<option value="西冷牛排">西冷牛排</option>
+					</select>
+					<span>数量</span>
+					<select name="" id="num">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+					<input type="button" value="下单" id="buy_food">
+				</form>
+		</div>
+		<header class="contact_input_head">
+		    <ul>
+		    	<li><img src="images/logo.png" alt="">
+			        <span>表单联系</span>
+                </li>
+		    	<li>
+		    	    <a href="index.html">首页>></a>
+		    	    <a href="contact.html">联系我们>></a>
+		    	    <a href="#">表单联系</a>
+		    	</li>
+		    </ul>
+		</header>
+		<section class="contact_input_main clearfix">
+			<section class="contact_input_left">
+				<section class="input_write clearfix">
+					<img src="images/input_write.png" alt="">
+					<p>在这里写下你想说的话，或者对我们的宝贵建议，我们将会认真对待 ，并在 第一时间回复。</p>
+				</section>
+				<section class="input_phone clearfix">
+					<img src="images/input_phone.png" alt="">
+					<p>4578 655 3887</p>
+					<p>欢迎致电，如您有任何疑问，我们客服将竭诚为您服务</p>
+				</section>
+				<section class="input_gift clearfix">
+					<img src="images/input_gift.png" alt="">
+					<p>一旦我们采纳您的建议，将有丰厚的奖品赠送，已表达我们对您真诚的感谢</p>
+				</section>
+			</section>
+			<section class="contact_input_right">
+				<form action="" method="post">
+				    <article class="int clearfix">
+				     	<label for="username">姓名：</label>
+					    <input type="text" placeholder="Name" id="username" class="required">
+				    </article>
+					<article class="int clearfix">
+						<label for="phone">手机：</label>
+					    <input type="text" placeholder="Telephone" id="phone" class="required">
+					</article>
+					<article class="int clearfix">
+						<label for="code">验证码：</label>
+						<input type="text" id="code">
+						<input type="text" id="codeText">
+						<input type="button" value="获取" id="getCode">
+						<input type="button" value="刷新" id="resCode">
+					</article>
+					<article class="int clearfix">
+						<label for="e-mail">邮箱：</label>
+					    <input type="email" placeholder="e-mail" id="e-mail">
+					</article>
+					<article class="int clearfix">
+						<label for="word">留言内容：</label>
+					    <textarea name="" id="word" cols="40" rows="20" placeholder="留下你想说的话吧"></textarea>
+					</article>
+					<article class="sub clearfix">
+						<input type="reset" value="重置" id="res">
+					    <input type="submit" value="提交" id="send">
+					</article>
+				</form>
+			</section>
+		</section>
+		<div class="foot">
+			<p>Copyrights @2016 All Rights Reserved By Steak House</p>
+		</div>
+	</div>
+</body>
+</html>
